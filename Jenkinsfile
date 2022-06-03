@@ -7,6 +7,11 @@ pipeline {
                 echo 'Hello World'
             }
         }
+        stage('Dev Branch') {
+            steps {
+                echo 'Building from Dev Branch'
+            }
+        }        
         stage('Uptime') {
             steps {
                 sh 'uptime'
