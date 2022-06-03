@@ -2,16 +2,16 @@ pipeline {
     agent any
 
     stages {
-        stage('hello-world') {
-            steps {
-                echo 'Hello World'
-            }
-        }
         stage('Dev Branch') {
             steps {
                 echo 'Building from Dev Branch'
             }
-        }        
+        }         
+        stage('hello-world') {
+            steps {
+                echo 'Hello World'
+            }
+        }       
         stage('Uptime') {
             steps {
                 sh 'uptime'
